@@ -1,19 +1,19 @@
 # Write your methods here
-require 'pry'
-
 def loop_message_five_times(string)
   counter = 0
-  while counter < 6 do
-    puts "Hello World."
+  while counter < 5 do
+    puts string
     counter += 1
   end
 end
 
-#def loop_message_n_times(string, num)
-  #while num do
-    #puts "Hello Moon."
-  #end
-#end
+def loop_message_n_times(string, limit)
+  count = 0
+  while count < limit do
+    puts string
+    count += 1
+  end
+end
 
 def output_array(array)
   index = 0
@@ -25,12 +25,10 @@ end
 
 def return_string_array(array)
   index = 0
-  return_string_array = []
+  new_array = []
   while index < array.length do
-    array[index].to_s
-    binding.pry
-    return_string_array.push
-    return return_string_array
+    new_array.push(array[index].to_s)
+    index +=1
   end
-
+  new_array
 end
