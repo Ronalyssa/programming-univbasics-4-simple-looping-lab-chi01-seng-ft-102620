@@ -28,5 +28,5 @@ def return_string_array(array)
     array[index].to_s
     return return_string_array.push
   end
-  
+
 end
