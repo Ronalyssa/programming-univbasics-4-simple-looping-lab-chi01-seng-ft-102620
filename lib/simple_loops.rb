@@ -26,7 +26,8 @@ def return_string_array(array)
   return_string_array = []
   while index < array.length do
     array[index].to_s
-    return return_string_array.push
+    return_string_array.push
+    return return
   end
 
 end
